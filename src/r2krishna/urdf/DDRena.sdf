@@ -1,0 +1,1633 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.7">
+    <model name="DDRena">
+        <static>true</static>
+        <link name="base_link">
+            <pose>0.0 -0.47499999999999953 -0.024999999999997868 1.570796326794894 -0.0 0.0</pose>
+            <inertial>
+                <mass>146599.9274999991</mass>
+                <pose>-0.024999999999982182 0.16144281304299155 -8.859037276809016 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>1634628.617268471</ixx>
+                    <ixy>-4.020591859443815e-09</ixy>
+                    <ixz>1.6552803572267182e-09</ixz>
+                    <iyy>3247209.4355982207</iyy>
+                    <iyz>38892.702974391155</iyz>
+                    <izz>1618646.0044733393</izz>
+                </inertia>
+            </inertial>
+            <visual name="base_link_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/base_link.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>1 1 1 1</diffuse>
+                    <ambient>1 1 1 1</ambient>
+                </material>
+            </visual>
+            <collision name="base_link_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/base_link.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4001">
+            <pose>3.6000000000000005 3.9250000000000007 0.024999999999990398 1.5707963267948966 -2.6645327180015328e-15 -1.570796326794897</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.6000000000000003 0.19999999999999998 -0.5999999999999996 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8800000000047</ixx>
+                    <ixy>-5.338746155228745e-13</ixy>
+                    <ixz>-7.275957614183425e-12</ixz>
+                    <iyy>1085.1839999999938</iyy>
+                    <iyz>-9.094947017729087e-13</iyz>
+                    <izz>602.8800000000119</izz>
+                </inertia>
+            </inertial>
+            <visual name="4001_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4001.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4001_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4001.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="2001">
+            <pose>3.6 3.9250000000000003 0.024999999999990398 1.5707963267948992 -0.0 3.141592653589793</pose>
+            <inertial>
+                <mass>2260.7999999999997</mass>
+                <pose>0.6 0.1 -0.6000000000000002 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>278.8319999999949</ixx>
+                    <ixy>-1.1368683772162572e-13</ixy>
+                    <ixz>-3.6379788070917125e-12</ixz>
+                    <iyy>542.5920000000042</iyy>
+                    <iyz>-2.0676123370403154e-14</iyz>
+                    <izz>278.8319999999985</izz>
+                </inertia>
+            </inertial>
+            <visual name="2001_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2001.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.16 0.32 0.06 1</diffuse>
+                    <ambient>0.16 0.32 0.06 1</ambient>
+                </material>
+            </visual>
+            <collision name="2001_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2001.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4002">
+            <pose>1.2 2.725 0.024999999999993597 1.570796326794894 -6.162969944567398e-31 -2.312964634635743e-16</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.5999999999999996 0.2 -0.5999999999999995 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8800000000265</ixx>
+                    <ixy>-2.2737367544326114e-13</ixy>
+                    <ixz>1.0913936421275132e-11</ixz>
+                    <iyy>1085.184000000023</iyy>
+                    <iyz>-7.912726463631785e-14</iyz>
+                    <izz>602.8799999999992</izz>
+                </inertia>
+            </inertial>
+            <visual name="4002_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4002.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4002_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4002.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="2002">
+            <pose>3.6 3.924999999999999 0.024999999999990398 1.570796326794894 -3.263111464323974e-31 -1.2246467991473532e-16</pose>
+            <inertial>
+                <mass>2260.7999999999997</mass>
+                <pose>0.5999999999999993 0.1 -0.5999999999999993 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>278.8319999999949</ixx>
+                    <ixy>-4.547473508864641e-13</ixy>
+                    <ixz>1.4641269956481653e-27</ixz>
+                    <iyy>542.5920000000042</iyy>
+                    <iyz>2.0676123370354687e-14</iyz>
+                    <izz>278.8320000000167</izz>
+                </inertia>
+            </inertial>
+            <visual name="2002_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2002.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.16 0.32 0.06 1</diffuse>
+                    <ambient>0.16 0.32 0.06 1</ambient>
+                </material>
+            </visual>
+            <collision name="2002_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2002.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="6001">
+            <pose>1.2 5.124999999999999 0.024999999999987203 1.5707963267948966 -2.6645327180015328e-15 -1.5707963267948968</pose>
+            <inertial>
+                <mass>6782.4</mass>
+                <pose>0.6000000000000001 0.2999999999999999 -0.5999999999999999 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>1017.3600000000079</ixx>
+                    <ixy>3.445462807137416e-12</ixy>
+                    <ixz>-1.4551915228366847e-11</ixz>
+                    <iyy>1627.7759999999835</iyy>
+                    <iyz>1.3642420526594307e-12</iyz>
+                    <izz>1017.3600000000151</izz>
+                </inertia>
+            </inertial>
+            <visual name="6001_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/6001.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.60 0.65 0.31 1</diffuse>
+                    <ambient>0.60 0.65 0.31 1</ambient>
+                </material>
+            </visual>
+            <collision name="6001_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/6001.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4003">
+            <pose>2.4 3.924999999999999 0.024999999999990398 1.570796326794894 -3.263111464323974e-31 -1.2246467991473532e-16</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.5999999999999999 0.2 -0.5999999999999995 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8800000000192</ixx>
+                    <ixy>4.5474735088644493e-13</ixy>
+                    <ixz>7.275957614183424e-12</ixz>
+                    <iyy>1085.1840000000084</iyy>
+                    <iyz>1.2851147880230406e-12</iyz>
+                    <izz>602.8799999999974</izz>
+                </inertia>
+            </inertial>
+            <visual name="4003_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4003.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4003_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4003.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4004">
+            <pose>3.6000000000000005 6.324999999999999 0.024999999999984004 1.5707963267948966 -2.6645327180015328e-15 -1.570796326794897</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.6000000000000003 0.19999999999999998 -0.5999999999999996 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8799999999901</ixx>
+                    <ixy>3.756200862500538e-13</ixy>
+                    <ixz>3.63507105125842e-27</ixz>
+                    <iyy>1085.1839999999793</iyy>
+                    <iyz>-9.094947017729284e-13</iyz>
+                    <izz>602.8800000000047</izz>
+                </inertia>
+            </inertial>
+            <visual name="4004_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4004.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4004_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4004.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="6002">
+            <pose>3.6 6.324999999999999 0.024999999999984004 1.5707963267948992 -0.0 3.141592653589793</pose>
+            <inertial>
+                <mass>6782.4</mass>
+                <pose>0.6 0.29999999999999993 -0.5999999999999996 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>1017.3599999999569</ixx>
+                    <ixy>9.094947017728895e-13</ixy>
+                    <ixz>-1.4551915228366855e-11</ixz>
+                    <iyy>1627.7760000000126</iyy>
+                    <iyz>-1.6264734035916751e-12</iyz>
+                    <izz>1017.3599999999933</izz>
+                </inertia>
+            </inertial>
+            <visual name="6002_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/6002.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.60 0.65 0.31 1</diffuse>
+                    <ambient>0.60 0.65 0.31 1</ambient>
+                </material>
+            </visual>
+            <collision name="6002_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/6002.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4005">
+            <pose>2.4000000000000004 6.324999999999999 0.024999999999984004 1.5707963267948992 9.466321834855524e-31 3.1415926535897927</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.6000000000000001 0.19999999999999998 -0.5999999999999996 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8799999999756</ixx>
+                    <ixy>1.8967036493329215e-28</ixy>
+                    <ixz>1.1637276073820368e-26</ixz>
+                    <iyy>1085.1839999999502</iyy>
+                    <iyz>5.338746155230001e-13</iyz>
+                    <izz>602.8800000000083</izz>
+                </inertia>
+            </inertial>
+            <visual name="4005_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4005.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4005_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4005.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="2003">
+            <pose>3.6 6.324999999999995 0.024999999999984004 1.570796326794894 -3.263111464323974e-31 -1.2246467991473532e-16</pose>
+            <inertial>
+                <mass>2260.7999999999997</mass>
+                <pose>0.5999999999999993 0.1 -0.5999999999999999 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>278.8319999999949</ixx>
+                    <ixy>-2.2737367544323206e-13</ixy>
+                    <ixz>1.1738256047478492e-27</ixz>
+                    <iyy>542.5919999999751</iyy>
+                    <iyz>2.0676123370296526e-14</iyz>
+                    <izz>278.83200000000943</izz>
+                </inertia>
+            </inertial>
+            <visual name="2003_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2003.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.16 0.32 0.06 1</diffuse>
+                    <ambient>0.16 0.32 0.06 1</ambient>
+                </material>
+            </visual>
+            <collision name="2003_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2003.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4006">
+            <pose>2.4 6.324999999999995 0.024999999999984004 1.570796326794894 -3.263111464323974e-31 -1.2246467991473532e-16</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.5999999999999999 0.2 -0.5999999999999995 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8799999999464</ixx>
+                    <ixy>3.882005442920039e-26</ixy>
+                    <ixz>-1.4551915228366845e-11</ixz>
+                    <iyy>1085.1840000000084</iyy>
+                    <iyz>3.7562008625009296e-13</iyz>
+                    <izz>602.8800000000047</izz>
+                </inertia>
+            </inertial>
+            <visual name="4006_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4006.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4006_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4006.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="2004">
+            <pose>1.2 6.324999999999995 0.024999999999984004 1.570796326794894 -0.0 0.0</pose>
+            <inertial>
+                <mass>2260.7999999999997</mass>
+                <pose>0.5999999999999998 0.1 -0.5999999999999998 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>278.8319999999949</ixx>
+                    <ixy>-5.684341886079832e-14</ixy>
+                    <ixz>-3.637978807091713e-12</ixz>
+                    <iyy>542.5919999999605</iyy>
+                    <iyz>2.0676123370279562e-14</iyz>
+                    <izz>278.83200000000124</izz>
+                </inertia>
+            </inertial>
+            <visual name="2004_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2004.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.16 0.32 0.06 1</diffuse>
+                    <ambient>0.16 0.32 0.06 1</ambient>
+                </material>
+            </visual>
+            <collision name="2004_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2004.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4007">
+            <pose>-2.45 3.9250000000000007 0.024999999999872503 1.5707963267948966 -2.6645327180015324e-15 -1.570796326794897</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.6000000000000003 0.19999999999999998 -0.6000000000000002 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.880000000001</ixx>
+                    <ixy>3.7562008625012163e-13</ixy>
+                    <ixz>1.0913936421275142e-11</ixz>
+                    <iyy>1085.1840000000157</iyy>
+                    <iyz>-2.9316752767225957e-26</iyz>
+                    <izz>602.8800000000119</izz>
+                </inertia>
+            </inertial>
+            <visual name="4007_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4007.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4007_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4007.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="2005">
+            <pose>-2.450000000000001 3.9250000000000003 0.024999999999872503 1.5707963267948992 -0.0 3.141592653589793</pose>
+            <inertial>
+                <mass>2260.7999999999997</mass>
+                <pose>0.6 0.09999999999999996 -0.6000000000000002 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>278.8319999999985</ixx>
+                    <ixy>-2.2737367544324175e-13</ixy>
+                    <ixz>-3.6379788070917125e-12</ixz>
+                    <iyy>542.5919999999896</iyy>
+                    <iyz>-2.4804979881359644e-13</iyz>
+                    <izz>278.8319999999985</izz>
+                </inertia>
+            </inertial>
+            <visual name="2005_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2005.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.16 0.32 0.06 1</diffuse>
+                    <ambient>0.16 0.32 0.06 1</ambient>
+                </material>
+            </visual>
+            <collision name="2005_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2005.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4008">
+            <pose>-3.650000000000002 2.725 0.0249999999998757 1.5707963267948966 2.6645327180015324e-15 1.5707963267948963</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.5999999999999992 0.2 -0.6000000000000002 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8799999999901</ixx>
+                    <ixy>-3.756200862500538e-13</ixy>
+                    <ixz>-1.4551915228366842e-11</ixz>
+                    <iyy>1085.1839999999793</iyy>
+                    <iyz>-3.8653964763822855e-26</iyz>
+                    <izz>602.8800000000265</izz>
+                </inertia>
+            </inertial>
+            <visual name="4008_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4008.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4008_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4008.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="6003">
+            <pose>-2.4500000000000006 3.924999999999999 0.024999999999904477 1.570796326794894 -3.2631114643239736e-31 -1.2246467991473532e-16</pose>
+            <inertial>
+                <mass>6782.4</mass>
+                <pose>0.5999999999999996 0.30000000000000004 -0.5999999999999999 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>1017.3600000000151</ixx>
+                    <ixy>-4.547473508864837e-13</ixy>
+                    <ixz>7.275957614183423e-12</ixz>
+                    <iyy>1627.7760000000126</iyy>
+                    <iyz>-2.0115054035000382e-12</iyz>
+                    <izz>1017.3599999999933</izz>
+                </inertia>
+            </inertial>
+            <visual name="6003_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/6003.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.60 0.65 0.31 1</diffuse>
+                    <ambient>0.60 0.65 0.31 1</ambient>
+                </material>
+            </visual>
+            <collision name="6003_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/6003.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4009">
+            <pose>-3.6500000000000012 3.924999999999999 0.024999999999904477 1.570796326794894 -3.263111464323974e-31 -1.2246467991473532e-16</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.6000000000000004 0.2 -0.5999999999999995 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8800000000338</ixx>
+                    <ixy>4.547473508865226e-13</ixy>
+                    <ixz>-2.182787284255028e-11</ixz>
+                    <iyy>1085.1840000000375</iyy>
+                    <iyz>2.1946094897960076e-12</iyz>
+                    <izz>602.8800000000119</izz>
+                </inertia>
+            </inertial>
+            <visual name="4009_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4009.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4009_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4009.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="2006">
+            <pose>-3.650000000000002 3.924999999999999 0.024999999999904477 1.5707963267948966 2.6645327180015324e-15 1.5707963267948963</pose>
+            <inertial>
+                <mass>2260.7999999999997</mass>
+                <pose>0.5999999999999996 0.1 -0.5999999999999995 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>278.8320000000167</ixx>
+                    <ixy>-2.480497988136642e-13</ixy>
+                    <ixz>1.455191522836685e-11</ixz>
+                    <iyy>542.5920000000333</iyy>
+                    <iyz>3.8768054326185436e-26</iyz>
+                    <izz>278.8320000000167</izz>
+                </inertia>
+            </inertial>
+            <visual name="2006_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2006.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.16 0.32 0.06 1</diffuse>
+                    <ambient>0.16 0.32 0.06 1</ambient>
+                </material>
+            </visual>
+            <collision name="2006_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2006.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4010">
+            <pose>-2.45 6.324999999999999 0.024999999999898083 1.5707963267948966 -2.6645327180015324e-15 -1.570796326794897</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.6000000000000003 0.19999999999999998 -0.6000000000000002 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8799999999992</ixx>
+                    <ixy>3.756200862501071e-13</ixy>
+                    <ixz>2.2719194070365115e-27</ixz>
+                    <iyy>1085.1840000000084</iyy>
+                    <iyz>-2.362120905497856e-28</iyz>
+                    <izz>602.8800000000047</izz>
+                </inertia>
+            </inertial>
+            <visual name="4010_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4010.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4010_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4010.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="6004">
+            <pose>-2.450000000000001 6.324999999999999 0.024999999999898083 1.5707963267948992 -0.0 3.141592653589793</pose>
+            <inertial>
+                <mass>6782.4</mass>
+                <pose>0.5999999999999994 0.3 -0.5999999999999996 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>1017.3599999999569</ixx>
+                    <ixy>-9.094947017728895e-13</ixy>
+                    <ixz>1.4551915228366855e-11</ixz>
+                    <iyy>1627.7760000000126</iyy>
+                    <iyz>1.9251599995429725e-13</iyz>
+                    <izz>1017.360000000037</izz>
+                </inertia>
+            </inertial>
+            <visual name="6004_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/6004.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.60 0.65 0.31 1</diffuse>
+                    <ambient>0.60 0.65 0.31 1</ambient>
+                </material>
+            </visual>
+            <collision name="6004_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/6004.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4011">
+            <pose>-3.650000000000002 5.124999999999999 0.02499999999990128 1.5707963267948966 2.6645327180015324e-15 1.5707963267948963</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.5999999999999992 0.2 -0.6000000000000002 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8799999999901</ixx>
+                    <ixy>-3.7562008625020887e-13</ixy>
+                    <ixz>-4.365574568510055e-11</ixz>
+                    <iyy>1085.1840000000375</iyy>
+                    <iyz>9.09494701772812e-13</iyz>
+                    <izz>602.8800000000047</izz>
+                </inertia>
+            </inertial>
+            <visual name="4011_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4011.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4011_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4011.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="2007">
+            <pose>-1.2500000000000009 6.324999999999995 0.024999999999930057 1.5707963267948966 2.6645327180015324e-15 1.5707963267948966</pose>
+            <inertial>
+                <mass>2260.7999999999997</mass>
+                <pose>0.5999999999999996 0.1 -0.6000000000000001 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>278.8319999999967</ixx>
+                    <ixy>-2.0676123370291578e-14</ixy>
+                    <ixz>-3.6379788070917146e-12</ixz>
+                    <iyy>542.5919999999605</iyy>
+                    <iyz>-9.654020473483846e-27</iyz>
+                    <izz>278.8319999999803</izz>
+                </inertia>
+            </inertial>
+            <visual name="2007_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2007.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.16 0.32 0.06 1</diffuse>
+                    <ambient>0.16 0.32 0.06 1</ambient>
+                </material>
+            </visual>
+            <collision name="2007_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2007.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="4012">
+            <pose>-3.6500000000000012 6.324999999999995 0.024999999999930057 1.570796326794894 -3.263111464323974e-31 -1.2246467991473532e-16</pose>
+            <inertial>
+                <mass>4521.6</mass>
+                <pose>0.6000000000000004 0.2 -0.5999999999999995 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>602.8799999999464</ixx>
+                    <ixy>3.8597292474126855e-26</ixy>
+                    <ixz>-1.4551915228366844e-11</ixz>
+                    <iyy>1085.1840000000375</iyy>
+                    <iyz>-1.443369317295705e-12</iyz>
+                    <izz>602.8800000000119</izz>
+                </inertia>
+            </inertial>
+            <visual name="4012_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4012.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.165 0.44 0.22 1</diffuse>
+                    <ambient>0.165 0.44 0.22 1</ambient>
+                </material>
+            </visual>
+            <collision name="4012_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/4012.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="2008">
+            <pose>-4.850000000000002 6.324999999999995 0.024999999999930057 1.570796326794894 -0.0 0.0</pose>
+            <inertial>
+                <mass>2260.7999999999997</mass>
+                <pose>0.6000000000000005 0.1 -0.5999999999999998 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>278.8319999999803</ixx>
+                    <ixy>0.0</ixy>
+                    <ixz>0.0</ixz>
+                    <iyy>542.5919999999751</iyy>
+                    <iyz>2.48049798813509e-13</iyz>
+                    <izz>278.8320000000167</izz>
+                </inertia>
+            </inertial>
+            <visual name="2008_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2008.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.16 0.32 0.06 1</diffuse>
+                    <ambient>0.16 0.32 0.06 1</ambient>
+                </material>
+            </visual>
+            <collision name="2008_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/2008.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="Spearhead_Rack">
+            <pose>0.12499999999999978 -0.12499999999999956 0.02500000000000135 1.5707963267948966 2.6645327180015328e-15 1.5707963267948966</pose>
+            <inertial>
+                <mass>1413.0372881915239</mass>
+                <pose>0.5999999999999999 0.2500069666120242 -0.15000000000000002 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>40.03760128927678</ixx>
+                    <ixy>-3.883423897035218e-15</ixy>
+                    <ixz>1.3286625897649255e-14</ixz>
+                    <iyy>180.16185045680857</iyy>
+                    <iyz>-7.105427357601032e-15</iyz>
+                    <izz>199.00445157828858</izz>
+                </inertia>
+            </inertial>
+            <visual name="Spearhead_Rack_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Spearhead_Rack.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.35 0.2 0.05 1</diffuse>
+                    <ambient>0.35 0.2 0.05 1</ambient>
+                </material>
+            </visual>
+            <collision name="Spearhead_Rack_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Spearhead_Rack.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="Staff_Rack">
+            <pose>3.8000000000000003 -0.17499999999999927 0.025000000000001323 1.5707963267948992 1.631555732161987e-31 3.141592653589793</pose>
+            <inertial>
+                <mass>42.60901761155399</mass>
+                <pose>0.4 0.12220170326042468 -0.10671666555490211 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>1.062003149331888</ixx>
+                    <ixy>7.107299988392326e-15</ixy>
+                    <ixz>2.344847417575154e-16</ixz>
+                    <iyy>4.0622304100850215</iyy>
+                    <iyz>0.030582381673255988</iyz>
+                    <izz>4.891429591646386</izz>
+                </inertia>
+            </inertial>
+            <visual name="Staff_Rack_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Staff_Rack.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.61 0.37 0.0 1</diffuse>
+                    <ambient>0.61 0.37 0.0 1</ambient>
+                </material>
+            </visual>
+            <collision name="Staff_Rack_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Staff_Rack.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="Acrylic_Fence">
+            <pose>3.975 8.964999999999998 0.12499999999997691 1.5707963267948968 2.6645327180015328e-15 1.5707963267948966</pose>
+            <inertial>
+                <mass>219.79999999999998</mass>
+                <pose>0.005000000000000205 0.35000000000000003 -1.9999999999999998 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>302.0418333333329</ixx>
+                    <ixy>-2.034639307461468e-13</ixy>
+                    <ixz>4.54747350886464e-13</ixz>
+                    <iyy>293.068498333334</iyy>
+                    <iyz>3.94478315538106e-14</iyz>
+                    <izz>8.976998333331721</izz>
+                </inertia>
+            </inertial>
+            <visual name="Acrylic_Fence_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Acrylic_Fence.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.39 0.24 0.0 1</diffuse>
+                    <ambient>0.39 0.24 0.0 1</ambient>
+                </material>
+            </visual>
+            <collision name="Acrylic_Fence_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Acrylic_Fence.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="Acrylic_Fence2">
+            <pose>-4.025 8.974999999999998 0.12499999999997734 1.5707963267948966 -2.6645327180015328e-15 -1.5707963267948966</pose>
+            <inertial>
+                <mass>219.79999999999998</mass>
+                <pose>0.004999999999999795 0.35 -1.9999999999999998 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>302.04183333333265</ixx>
+                    <ixy>-2.3909744697084642e-14</ixy>
+                    <ixz>1.235463335160298e-28</ixz>
+                    <iyy>293.068498333334</iyy>
+                    <iyz>4.581729673740263e-14</iyz>
+                    <izz>8.976998333331721</izz>
+                </inertia>
+            </inertial>
+            <visual name="Acrylic_Fence2_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Acrylic_Fence2.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.39 0.24 0.0 1</diffuse>
+                    <ambient>0.39 0.24 0.0 1</ambient>
+                </material>
+            </visual>
+            <collision name="Acrylic_Fence2_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Acrylic_Fence2.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="Staff_Rack2">
+            <pose>-3.050000000000001 -0.17499999999999916 0.025000000000001323 1.5707963267948992 1.631555732161987e-31 3.141592653589793</pose>
+            <inertial>
+                <mass>42.60901761155399</mass>
+                <pose>0.4 0.12220170326042468 -0.10671666555490211 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>1.0620031493318889</ixx>
+                    <ixy>1.872630791322781e-18</ixy>
+                    <ixz>2.344847417575342e-16</ixz>
+                    <iyy>4.062230410084851</iyy>
+                    <iyz>0.030582381673255988</iyz>
+                    <izz>4.891429591646386</izz>
+                </inertia>
+            </inertial>
+            <visual name="Staff_Rack2_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Staff_Rack2.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.61 0.37 0.0 1</diffuse>
+                    <ambient>0.61 0.37 0.0 1</ambient>
+                </material>
+            </visual>
+            <collision name="Staff_Rack2_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Staff_Rack2.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="Ramp">
+            <pose>6.0 10.324999999999998 0.024999999999972645 1.5707963267948966 -2.6645327180015328e-15 -1.5707963267948966</pose>
+            <inertial>
+                <mass>3532.499999999999</mass>
+                <pose>0.5000000000000003 0.13333333333333322 0.7499999999999997 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>693.7437500000235</ixx>
+                    <ixy>58.875000000001066</ixy>
+                    <ixz>9.833480091650478e-28</ixz>
+                    <iyy>1103.9062499999986</iyy>
+                    <iyz>4.5474735088646326e-13</iyz>
+                    <izz>472.9624999999646</izz>
+                </inertia>
+            </inertial>
+            <visual name="Ramp_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Ramp.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.7529 0.7411 0.7137 1</diffuse>
+                    <ambient>0.7529 0.7411 0.7137 1</ambient>
+                </material>
+            </visual>
+            <collision name="Ramp_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Ramp.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="ramp2">
+            <pose>-4.550000000000001 10.324999999999998 0.024999999999973568 1.5707963267948966 -2.6645327180015328e-15 -1.5707963267948968</pose>
+            <inertial>
+                <mass>3532.499999999999</mass>
+                <pose>0.5000000000000004 0.13333333333333322 0.749999999999999 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>693.7437500000235</ixx>
+                    <ixy>58.875000000000156</ixy>
+                    <ixz>2.907679255162126e-11</ixz>
+                    <iyy>1103.9062499999986</iyy>
+                    <iyz>-4.619574589165213e-13</iyz>
+                    <izz>472.9624999999646</izz>
+                </inertia>
+            </inertial>
+            <visual name="ramp2_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/ramp2.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>0.7529 0.7411 0.7137 1</diffuse>
+                    <ambient>0.7529 0.7411 0.7137 1</ambient>
+                </material>
+            </visual>
+            <collision name="ramp2_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/ramp2.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="Tic-Tac-Toe_Base">
+            <pose>0.13500000000000012 9.465000000000007 0.42499999999997556 1.5707963267948966 2.6645327180015328e-15 1.5707963267948966</pose>
+            <inertial>
+                <mass>1627.7759999999998</mass>
+                <pose>0.8099999999999995 0.2000000000000001 -0.16000000000000006 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>35.59403520000001</ixx>
+                    <ixy>9.282602800322939e-13</ixy>
+                    <ixz>2.09478441042531e-14</ixz>
+                    <iyy>369.8849663999864</iyy>
+                    <iyz>1.0658141036401392e-14</iyz>
+                    <izz>377.6982911999804</izz>
+                </inertia>
+            </inertial>
+            <visual name="Tic-Tac-Toe_Base_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Tic-Tac-Toe_Base.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>1.0 1.0 0.1 1</diffuse>
+                    <ambient>1.0 1.0 0.1 1</ambient>
+                </material>
+            </visual>
+            <collision name="Tic-Tac-Toe_Base_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Tic-Tac-Toe_Base.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <link name="Tic-Tac-Toe_Top">
+            <pose>0.12500000000000017 9.465000000000007 0.8249999999999762 1.5707963267948966 2.664532718001533e-15 1.5707963267948966</pose>
+            <inertial>
+                <mass>881.7119999999985</mass>
+                <pose>0.8100000000000116 0.810000000000001 -0.1500000000000001 0.0 0.0 0.0</pose>
+                <inertia>
+                    <ixx>217.81225439999798</ixx>
+                    <ixy>-7.275957614183453e-12</ixy>
+                    <ixz>1.2621415239598832e-13</ixz>
+                    <iyy>217.81225440000725</iyy>
+                    <iyz>3.1974423109204614e-13</iyz>
+                    <izz>422.3988287999822</izz>
+                </inertia>
+            </inertial>
+            <visual name="Tic-Tac-Toe_Top_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Tic-Tac-Toe_Top.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <material>
+                    <diffuse>1.0 1.0 0.1 1</diffuse>
+                    <ambient>1.0 1.0 0.1 1</ambient>
+                </material>
+            </visual>
+            <collision name="Tic-Tac-Toe_Top_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://arenew/meshes/Tic-Tac-Toe_Top.stl</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+                <surface>
+                    <friction>
+                        <ode><mu>100</mu><mu2>100</mu2></ode>
+                    </friction>
+                    <contact>
+                        <ode><min_depth>0.002</min_depth><max_vel>0.1</max_vel><kp>1e8</kp><kd>1.0</kd></ode>
+                    </contact>
+                </surface>
+            </collision>
+        </link>
+        <joint name="base_link_Rigid-1" type="fixed">
+            <pose>1.2000000000000002 6.405989901405763e-15 -1.1999999999999997 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4001</child>
+        </joint>
+        <joint name="base_link_Rigid-2" type="fixed">
+            <pose>0.6000000000000001 6.405989901405764e-15 -1.2000000000000002 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>2001</child>
+        </joint>
+        <joint name="base_link_Rigid-3" type="fixed">
+            <pose>3.9471351595791377e-45 6.404599073306372e-15 1.7065263776507124e-29 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4002</child>
+        </joint>
+        <joint name="base_link_Rigid-4" type="fixed">
+            <pose>1.1999999999999995 1.2800868424609446e-14 -1.2000000000000013 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>2002</child>
+        </joint>
+        <joint name="base_link_Rigid-6" type="fixed">
+            <pose>-8.881784197000911e-16 1.2798789805756884e-14 1.6315572881362186e-31 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>6001</child>
+        </joint>
+        <joint name="base_link_Rigid-7" type="fixed">
+            <pose>0.6 1.2800868424609446e-14 -1.200000000000001 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4003</child>
+        </joint>
+        <joint name="base_link_Rigid-8" type="fixed">
+            <pose>1.1999999999999988 1.2800180633856277e-14 -1.1999999999999997 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4004</child>
+        </joint>
+        <joint name="base_link_Rigid-9" type="fixed">
+            <pose>0.6000000000000001 1.2800180633856277e-14 -1.1999999999999993 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>6002</child>
+        </joint>
+        <joint name="base_link_Rigid-10" type="fixed">
+            <pose>1.2 1.2800180633856277e-14 -1.1999999999999997 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4005</child>
+        </joint>
+        <joint name="base_link_Rigid-11" type="fixed">
+            <pose>1.1999999999999995 1.9195059157059968e-14 -1.2000000000000057 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>2003</child>
+        </joint>
+        <joint name="base_link_Rigid-13" type="fixed">
+            <pose>0.6 1.9195059157059968e-14 -1.2000000000000055 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4006</child>
+        </joint>
+        <joint name="base_link_Rigid-14" type="fixed">
+            <pose>0.0 1.9195059157059968e-14 -1.2000000000000055 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>2004</child>
+        </joint>
+        <joint name="base_link_Rigid-15" type="fixed">
+            <pose>1.2000000000000002 1.2430126677574153e-13 -1.2000000000000006 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4007</child>
+        </joint>
+        <joint name="base_link_Rigid-16" type="fixed">
+            <pose>0.5999999999999988 1.2430126677574153e-13 -1.2000000000000002 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>2005</child>
+        </joint>
+        <joint name="base_link_Rigid-17" type="fixed">
+            <pose>-3.5103456410546085e-16 1.2429987594764214e-13 -1.1999999999999975 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4008</child>
+        </joint>
+        <joint name="base_link_Rigid-18" type="fixed">
+            <pose>1.2000000000000004 9.87217221897407e-14 -1.2000000000000013 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>6003</child>
+        </joint>
+        <joint name="base_link_Rigid-19" type="fixed">
+            <pose>0.6000000000000013 9.87217221897407e-14 -1.200000000000001 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4009</child>
+        </joint>
+        <joint name="base_link_Rigid-20" type="fixed">
+            <pose>1.2000000000000008 9.87217221897407e-14 -1.1999999999999977 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>2006</child>
+        </joint>
+        <joint name="base_link_Rigid-21" type="fixed">
+            <pose>1.1999999999999988 9.872103439898753e-14 -1.2000000000000006 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4010</child>
+        </joint>
+        <joint name="base_link_Rigid-22" type="fixed">
+            <pose>0.5999999999999988 9.872103439898753e-14 -1.1999999999999993 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>6004</child>
+        </joint>
+        <joint name="base_link_Rigid-23" type="fixed">
+            <pose>5.371438555947325e-16 9.872311301784009e-14 -1.1999999999999975 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4011</child>
+        </joint>
+        <joint name="base_link_Rigid-24" type="fixed">
+            <pose>1.2000000000000055 7.314148981298672e-14 7.412208038024422e-16 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>2007</child>
+        </joint>
+        <joint name="base_link_Rigid-25" type="fixed">
+            <pose>0.6000000000000013 7.314148981298672e-14 -1.2000000000000055 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>4012</child>
+        </joint>
+        <joint name="base_link_Rigid-26" type="fixed">
+            <pose>2.6645352591003757e-15 7.314148981298672e-14 -1.2000000000000055 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>2008</child>
+        </joint>
+        <joint name="base_link_Rigid-27" type="fixed">
+            <pose>0.5999999999999995 2.4910476649096227e-16 -0.14999999999999983 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>Spearhead_Rack</child>
+        </joint>
+        <joint name="base_link_Rigid-28" type="fixed">
+            <pose>0.8000000000000003 -2.1212191040947888e-15 -0.30000000000000077 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>Staff_Rack</child>
+        </joint>
+        <joint name="base_link_Rigid-29" type="fixed">
+            <pose>0.01000000000000063 0.35000000000002285 -4.0 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>Acrylic_Fence</child>
+        </joint>
+        <joint name="base_link_Rigid-30" type="fixed">
+            <pose>-8.437703880996536e-16 0.35000000000002285 -4.0 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>Acrylic_Fence2</child>
+        </joint>
+        <joint name="base_link_Rigid-31" type="fixed">
+            <pose>-1.3506373315373983e-15 -2.121219104094789e-15 -0.3000000000000008 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>Staff_Rack2</child>
+        </joint>
+        <joint name="base_link_Rigid-32" type="fixed">
+            <pose>0.07499999999999751 2.7156749262304127e-14 -2.218569733272593e-32 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>Ramp</child>
+        </joint>
+        <joint name="base_link_Rigid-33" type="fixed">
+            <pose>0.0749999999999977 2.6233876373084465e-14 1.4999999999999984 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>ramp2</child>
+        </joint>
+        <joint name="base_link_Rigid-34" type="fixed">
+            <pose>0.8099999999999934 2.6583178043334674e-14 -0.1600000000000002 0.0 0.0 0.0</pose>
+            <parent>base_link</parent>
+            <child>Tic-Tac-Toe_Base</child>
+        </joint>
+        <joint name="Tic-Tac-Toe_Base_Rigid-35" type="fixed">
+            <pose>0.8099999999999934 2.5917044228559586e-14 -0.15000000000000027 0.0 0.0 0.0</pose>
+            <parent>Tic-Tac-Toe_Base</parent>
+            <child>Tic-Tac-Toe_Top</child>
+        </joint>
+    </model>
+</sdf>

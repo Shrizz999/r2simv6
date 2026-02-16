@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="DDRena">
+    <link name="world"/>
+    <joint name="world_to_base_fixed" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin xyz="0 0 12.8" rpy="0 0 0"/>
+    </joint>
+
+<link name="base_link">
+        <inertial>
+            <origin xyz="0.09804830425172041 0.16806350640087753 -8.851777051318086" rpy="0.0 0.0 0.0" />
+            <mass value="147634.65562499862" />
+            <inertia ixx="1625855.778023862" iyy="3361200.2646735646" izz="1741302.061676479" ixy="2598.9194149476243" iyz="40775.69407793386" ixz="34029.33153491527" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/base_link.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Acrylic_Fence">
+        <inertial>
+            <origin xyz="2.0000000000000004 -0.005000000000001705 -2.4726887204451486e-14" rpy="0.0 -0.0 0.0" />
+            <mass value="219.79999999999998" />
+            <inertia ixx="8.97699833333445" iyy="302.0418333333321" izz="293.0684983333349" ixy="6.819335666220126e-64" iyz="-1.1368683772161603e-13" ixz="-2.7827880856518003e-63" />
+        </inertial>
+        <visual name="Acrylic_Fence_visual">
+            <origin xyz="-7.860379014346108e-16 -0.01 0.34999999999997555" rpy="-1.5707963267948966 2.664532718001526e-15 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Acrylic_Fence.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Acrylic_Fence_collision">
+            <origin xyz="-7.860379014346108e-16 -0.01 0.34999999999997555" rpy="-1.5707963267948966 2.664532718001526e-15 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Acrylic_Fence.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="spearhead_rack">
+        <inertial>
+            <origin xyz="-1.5987211554602254e-16 -0.2500069666120226 5.684341886080802e-16" rpy="0.0 -0.0 0.0" />
+            <mass value="1413.0372881915239" />
+            <inertia ixx="199.00445157828653" iyy="180.1618504568105" izz="40.037601289276765" ixy="5.329070518200751e-15" iyz="-2.273736754432321e-13" ixz="-2.1019476964872256e-45" />
+        </inertial>
+        <visual name="spearhead_rack_visual">
+            <origin xyz="0.1499999999999998 -7.105427357601002e-17 -0.6" rpy="3.141592653589793 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/spearhead_rack.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="spearhead_rack_collision">
+            <origin xyz="0.1499999999999998 -7.105427357601002e-17 -0.6" rpy="3.141592653589793 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/spearhead_rack.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Staff_Rack">
+        <inertial>
+            <origin xyz="0.12220170326042505 0.39999999999999375 0.19328333444509896" rpy="0.0 -0.0 0.0" />
+            <mass value="42.60901761155399" />
+            <inertia ixx="4.0622304100850215" iyy="1.0620031493317583" izz="4.891429591646386" ixy="-3.552713678800501e-15" iyz="-1.1368683772161603e-13" ixz="0.03058238167324845" />
+        </inertial>
+        <visual name="Staff_Rack_visual">
+            <origin xyz="3.552713678800501e-17 0.7999999999999926 0.3" rpy="2.6645327180015477e-15 -6.123233995736764e-17 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Staff_Rack.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Staff_Rack_collision">
+            <origin xyz="3.552713678800501e-17 0.7999999999999926 0.3" rpy="2.6645327180015477e-15 -6.123233995736764e-17 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Staff_Rack.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Tic-Tac-Toe_Base">
+        <inertial>
+            <origin xyz="3.588240815588506e-15 -0.19999999999997145 -5.684341886080802e-16" rpy="0.0 -0.0 0.0" />
+            <mass value="1627.7759999999998" />
+            <inertia ixx="377.69829120000213" iyy="369.88496640000085" izz="35.594035199999894" ixy="-7.105427357601002e-15" iyz="-9.094947017729284e-13" ixz="-5.684341886080802e-14" />
+        </inertial>
+        <visual name="Tic-Tac-Toe_Base_visual">
+            <origin xyz="0.16000000000000364 2.6432189770275728e-14 -0.8100000000000012" rpy="-3.141592653589793 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Tic-Tac-Toe_Base.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Tic-Tac-Toe_Base_collision">
+            <origin xyz="0.16000000000000364 2.6432189770275728e-14 -0.8100000000000012" rpy="-3.141592653589793 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Tic-Tac-Toe_Base.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Tic-Tac-Toe_Top">
+        <inertial>
+            <origin xyz="3.606004383982509e-15 -0.8099999999999722 1.3073986337985844e-14" rpy="0.0 -0.0 0.0" />
+            <mass value="881.7119999999985" />
+            <inertia ixx="422.39882880000005" iyy="217.81225440000708" izz="217.81225439999662" ixy="-2.984279490192421e-13" iyz="1.8189894035458565e-12" ixz="1.4210854715202004e-13" />
+        </inertial>
+        <visual name="Tic-Tac-Toe_Top_visual">
+            <origin xyz="0.1500000000000036 2.671640686457977e-14 -0.81" rpy="-3.141592653589793 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Tic-Tac-Toe_Top.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Tic-Tac-Toe_Top_collision">
+            <origin xyz="0.1500000000000036 2.671640686457977e-14 -0.81" rpy="-3.141592653589793 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Tic-Tac-Toe_Top.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4001">
+        <inertial>
+            <origin xyz="0.19999999999999069 -0.6000000000000085 0.6000000000000005" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="1085.1839999999938" iyy="602.880000000001" izz="602.8800000000047" ixy="-1.0304202338747871e-62" iyz="4.579750306051014e-62" ixz="1.3642420526593926e-12" />
+        </inertial>
+        <visual name="4001_visual">
+            <origin xyz="-1.0906830993917539e-14 -1.200000000000008 1.2" rpy="1.5707963267948966 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4001.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4001_collision">
+            <origin xyz="-1.0906830993917539e-14 -1.200000000000008 1.2" rpy="1.5707963267948966 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4001.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="2001">
+        <inertial>
+            <origin xyz="-5.115907697472721e-15 -0.09999999999999068 0.6" rpy="0.0 -0.0 0.0" />
+            <mass value="2260.7999999999997" />
+            <inertia ixx="278.83200000000215" iyy="542.5920000000006" izz="278.83199999999124" ixy="1.1368683772161603e-13" iyz="-7.958078640513123e-13" ixz="-4.484155085839415e-44" />
+        </inertial>
+        <visual name="2001_visual">
+            <origin xyz="0.5999999999999949 1.0906830993917539e-14 1.1999999999999995" rpy="2.6645327180015367e-15 8.552847072295193e-50 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2001.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="2001_collision">
+            <origin xyz="0.5999999999999949 1.0906830993917539e-14 1.1999999999999995" rpy="2.6645327180015367e-15 8.552847072295193e-50 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2001.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4002">
+        <inertial>
+            <origin xyz="0.19999999999999069 0.599999999999998 0.6" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="1085.1840000000084" iyy="602.880000000001" izz="602.8800000000065" ixy="-4.547473508864641e-13" iyz="3.637978807091713e-12" ixz="9.094947017729284e-13" />
+        </inertial>
+        <visual name="4002_visual">
+            <origin xyz="-1.0906830993917539e-14 1.1999999999999984 1.1999999999999988" rpy="2.6645327180015367e-15 -3.552713678800501e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4002.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4002_collision">
+            <origin xyz="-1.0906830993917539e-14 1.1999999999999984 1.1999999999999988" rpy="2.6645327180015367e-15 -3.552713678800501e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4002.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="2002">
+        <inertial>
+            <origin xyz="0.09999999999998747 -0.6000000000000085 -0.6000000000000008" rpy="0.0 -0.0 0.0" />
+            <mass value="2260.7999999999997" />
+            <inertia ixx="542.5920000000042" iyy="278.8319999999999" izz="278.83200000000215" ixy="-4.547473508864641e-13" iyz="1.8189894035458565e-12" ixz="6.821210263296963e-13" />
+        </inertial>
+        <visual name="2002_visual">
+            <origin xyz="-1.0906830993917539e-14 -1.2000000000000086 -1.200000000000001" rpy="3.1415926535897905 1.2246467991473532e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2002.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="2002_collision">
+            <origin xyz="-1.0906830993917539e-14 -1.2000000000000086 -1.200000000000001" rpy="3.1415926535897905 1.2246467991473532e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2002.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4003">
+        <inertial>
+            <origin xyz="-5.115907697472721e-15 -0.1999999999999875 -0.6000000000000008" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="602.8800000000001" iyy="1085.1839999999866" izz="602.8799999999901" ixy="-4.547473508864641e-13" iyz="-1.2505552149377765e-12" ixz="1.8189894035458565e-12" />
+        </inertial>
+        <visual name="4003_visual">
+            <origin xyz="-0.6000000000000051 1.0906830993917539e-14 -1.200000000000001" rpy="3.1415926535897905 1.2246467991473532e-16 -3.263111464323979e-31" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4003.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4003_collision">
+            <origin xyz="-0.6000000000000051 1.0906830993917539e-14 -1.200000000000001" rpy="3.1415926535897905 1.2246467991473532e-16 -3.263111464323979e-31" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4003.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="6001">
+        <inertial>
+            <origin xyz="0.2999999999999875 0.5999999999999978 -0.6000000000000003" rpy="0.0 -0.0 0.0" />
+            <mass value="6782.4" />
+            <inertia ixx="1627.775999999998" iyy="1017.3600000000006" izz="1017.3600000000006" ixy="4.547473508864641e-13" iyz="-1.8189894035458565e-12" ixz="2.273736754432321e-12" />
+        </inertial>
+        <visual name="6001_visual">
+            <origin xyz="-1.0906830993917539e-14 -2.1316282072803005e-15 -1.200000000000001" rpy="3.1415926535897905 -1.9259299443872444e-34 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/6001.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="6001_collision">
+            <origin xyz="-1.0906830993917539e-14 -2.1316282072803005e-15 -1.200000000000001" rpy="3.1415926535897905 -1.9259299443872444e-34 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/6001.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4004">
+        <inertial>
+            <origin xyz="0.1999999999999843 -0.6000000000000085 0.5999999999999998" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="1085.1839999999938" iyy="602.8800000000001" izz="602.8800000000192" ixy="9.094947017729282e-13" iyz="-1.8189894035458565e-12" ixz="1.1652900866465645e-12" />
+        </inertial>
+        <visual name="4004_visual">
+            <origin xyz="-1.730171561575844e-14 -1.200000000000008 1.1999999999999993" rpy="1.5707963267948966 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4004.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4004_collision">
+            <origin xyz="-1.730171561575844e-14 -1.200000000000008 1.1999999999999993" rpy="1.5707963267948966 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4004.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="6002">
+        <inertial>
+            <origin xyz="-5.115907697472721e-15 -0.2999999999999843 0.5999999999999995" rpy="0.0 -0.0 0.0" />
+            <mass value="6782.4" />
+            <inertia ixx="1017.360000000001" iyy="1627.7759999999907" izz="1017.359999999986" ixy="-9.094947017729282e-13" iyz="-1.4779288903810086e-12" ixz="1.8189894035458565e-12" />
+        </inertial>
+        <visual name="6002_visual">
+            <origin xyz="0.5999999999999949 1.730171561575844e-14 1.1999999999999988" rpy="2.6645327180015367e-15 8.552847072295193e-50 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/6002.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="6002_collision">
+            <origin xyz="0.5999999999999949 1.730171561575844e-14 1.1999999999999988" rpy="2.6645327180015367e-15 8.552847072295193e-50 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/6002.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4005">
+        <inertial>
+            <origin xyz="0.1999999999999843 0.599999999999998 0.5999999999999992" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="1085.1839999999993" iyy="602.8799999999983" izz="602.8800000000047" ixy="-6.821210263296962e-13" iyz="2.2737367544323206e-13" ixz="1.1652900866465645e-12" />
+        </inertial>
+        <visual name="4005_visual">
+            <origin xyz="-1.730171561575844e-14 1.1999999999999984 1.1999999999999984" rpy="2.6645327180015367e-15 -3.552713678800501e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4005.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4005_collision">
+            <origin xyz="-1.730171561575844e-14 1.1999999999999984 1.1999999999999984" rpy="2.6645327180015367e-15 -3.552713678800501e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4005.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="2003">
+        <inertial>
+            <origin xyz="0.0999999999999811 -0.6000000000000085 -0.6000000000000018" rpy="0.0 -0.0 0.0" />
+            <mass value="2260.7999999999997" />
+            <inertia ixx="542.5919999999969" iyy="278.8319999999994" izz="278.8319999999949" ixy="-2.2737367544323206e-13" iyz="-8.96831017167883e-44" ixz="6.821210263296963e-13" />
+        </inertial>
+        <visual name="2003_visual">
+            <origin xyz="-1.730171561575844e-14 -1.2000000000000086 -1.2000000000000022" rpy="3.1415926535897905 1.2246467991473532e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2003.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="2003_collision">
+            <origin xyz="-1.730171561575844e-14 -1.2000000000000086 -1.2000000000000022" rpy="3.1415926535897905 1.2246467991473532e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2003.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4006">
+        <inertial>
+            <origin xyz="-5.115907697472721e-15 -0.1999999999999811 -0.600000000000002" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="602.8799999999992" iyy="1085.184000000001" izz="602.8799999999901" ixy="-4.547473508864641e-13" iyz="-9.094947017729284e-13" ixz="-3.637978807091713e-12" />
+        </inertial>
+        <visual name="4006_visual">
+            <origin xyz="-0.6000000000000051 1.730171561575844e-14 -1.2000000000000022" rpy="3.1415926535897905 1.2246467991473532e-16 -3.263111464323979e-31" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4006.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4006_collision">
+            <origin xyz="-0.6000000000000051 1.730171561575844e-14 -1.2000000000000022" rpy="3.1415926535897905 1.2246467991473532e-16 -3.263111464323979e-31" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4006.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="2004">
+        <inertial>
+            <origin xyz="0.0999999999999811 0.5999999999999974 -0.600000000000002" rpy="0.0 -0.0 0.0" />
+            <mass value="2260.7999999999997" />
+            <inertia ixx="542.5920000000024" iyy="278.8319999999994" izz="278.83200000000306" ixy="-2.2737367544323206e-13" iyz="-8.96831017167883e-44" ixz="6.821210263296963e-13" />
+        </inertial>
+        <visual name="2004_visual">
+            <origin xyz="-1.730171561575844e-14 1.1999999999999977 -1.2000000000000026" rpy="-1.5707963267948966 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2004.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="2004_collision">
+            <origin xyz="-1.730171561575844e-14 1.1999999999999977 -1.2000000000000026" rpy="-1.5707963267948966 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2004.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="6004">
+        <inertial>
+            <origin xyz="4.547473508864641e-15 -0.2999999999998984 0.5999999999999995" rpy="0.0 -0.0 0.0" />
+            <mass value="6782.4" />
+            <inertia ixx="1017.3600000000008" iyy="1627.7760000000053" izz="1017.3600000000079" ixy="9.094947017729282e-13" iyz="-1.3073986337985845e-12" ixz="9.094947017729282e-13" />
+        </inertial>
+        <visual name="6004_visual">
+            <origin xyz="0.6000000000000045 1.0322409593754855e-13 1.1999999999999988" rpy="2.6645327180015367e-15 8.552847072295193e-50 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/6004.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="6004_collision">
+            <origin xyz="0.6000000000000045 1.0322409593754855e-13 1.1999999999999988" rpy="2.6645327180015367e-15 8.552847072295193e-50 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/6004.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Staff_Rack2">
+        <inertial>
+            <origin xyz="-0.39999999999999547 -0.12220170326042498 0.19328333444509782" rpy="0.0 -0.0 0.0" />
+            <mass value="42.60901761155399" />
+            <inertia ixx="1.062003149332213" iyy="4.062230410084567" izz="4.891429591646215" ixy="7.105427357601002e-15" iyz="-0.03058238167326266" ixz="-1.1368683772161603e-13" />
+        </inertial>
+        <visual name="Staff_Rack2_visual">
+            <origin xyz="4.547473508864641e-15 -1.7763568394002505e-17 0.3" rpy="2.6645327180015367e-15 -6.123233995736766e-17 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Staff_Rack2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Staff_Rack2_collision">
+            <origin xyz="4.547473508864641e-15 -1.7763568394002505e-17 0.3" rpy="2.6645327180015367e-15 -6.123233995736766e-17 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Staff_Rack2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4007">
+        <inertial>
+            <origin xyz="0.19999999999987278 -0.5999999999999978 0.6000000000000031" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="1085.1840000000084" iyy="602.8800000000047" izz="602.8799999999974" ixy="2.2737367544328053e-13" iyz="-3.637978807091713e-12" ixz="-6.6677330323727444e-12" />
+        </inertial>
+        <visual name="4007_visual">
+            <origin xyz="-1.2880363442491217e-13 -1.1999999999999977 1.1999999999999997" rpy="1.5707963267948966 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4007.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4007_collision">
+            <origin xyz="-1.2880363442491217e-13 -1.1999999999999977 1.1999999999999997" rpy="1.5707963267948966 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4007.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4008">
+        <inertial>
+            <origin xyz="0.19999999999987278 0.6000000000000063 0.6000000000000025" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="1085.1839999999938" iyy="602.8800000000047" izz="602.8800000000047" ixy="9.094947017728313e-13" iyz="7.275957614183426e-12" ixz="-6.667733032372841e-12" />
+        </inertial>
+        <visual name="4008_visual">
+            <origin xyz="-1.2560619211399172e-13 6.252776074688882e-15 -5.684341886080802e-16" rpy="3.141592653589777 2.312964634635743e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4008.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4008_collision">
+            <origin xyz="-1.2560619211399172e-13 6.252776074688882e-15 -5.684341886080802e-16" rpy="3.141592653589777 2.312964634635743e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4008.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="2005">
+        <inertial>
+            <origin xyz="4.547473508864641e-15 -0.09999999999987277 0.6" rpy="0.0 -0.0 0.0" />
+            <mass value="2260.7999999999997" />
+            <inertia ixx="278.832000000004" iyy="542.5920000000006" izz="278.8319999999985" ixy="7.174648137343064e-43" iyz="-7.958078640513123e-13" ixz="1.8189894035458565e-12" />
+        </inertial>
+        <visual name="2005_visual">
+            <origin xyz="0.6000000000000045 1.2880363442491217e-13 1.1999999999999995" rpy="2.6645327180015367e-15 8.552847072295193e-50 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2005.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="2005_collision">
+            <origin xyz="0.6000000000000045 1.2880363442491217e-13 1.1999999999999995" rpy="2.6645327180015367e-15 8.552847072295193e-50 3.141592653589793" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2005.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="6003">
+        <inertial>
+            <origin xyz="0.2999999999999016 -0.5999999999999983 -0.5999999999999964" rpy="0.0 -0.0 0.0" />
+            <mass value="6782.4" />
+            <inertia ixx="1627.775999999998" iyy="1017.3600000000015" izz="1017.3600000000006" ixy="4.547473508864641e-13" iyz="1.793662034335766e-43" ixz="-1.2189715903332406e-11" />
+        </inertial>
+        <visual name="6003_visual">
+            <origin xyz="-9.682921131570765e-14 -1.1999999999999984 -1.200000000000001" rpy="3.141592653589777 1.2246467991473532e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/6003.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="6003_collision">
+            <origin xyz="-9.682921131570765e-14 -1.1999999999999984 -1.200000000000001" rpy="3.141592653589777 1.2246467991473532e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/6003.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="2006">
+        <inertial>
+            <origin xyz="0.09999999999990157 0.6000000000000063 -0.5999999999999994" rpy="0.0 -0.0 0.0" />
+            <mass value="2260.7999999999997" />
+            <inertia ixx="542.5920000000115" iyy="278.83200000000033" izz="278.83200000000215" ixy="2.2737367544323206e-13" iyz="8.96831017167883e-44" ixz="-3.032667450497712e-12" />
+        </inertial>
+        <visual name="2006_visual">
+            <origin xyz="-9.682921131570765e-14 1.2000000000000057 -1.2000000000000015" rpy="-1.5707963267948966 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2006.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="2006_collision">
+            <origin xyz="-9.682921131570765e-14 1.2000000000000057 -1.2000000000000015" rpy="-1.5707963267948966 -1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2006.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4009">
+        <inertial>
+            <origin xyz="5.115907697472721e-15 -0.19999999999990156 -0.6000000000000008" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="602.8800000000001" iyy="1085.184000000023" izz="602.8800000000119" ixy="-9.094947017729282e-13" iyz="-1.3642420526593926e-12" ixz="-5.4569682106375694e-12" />
+        </inertial>
+        <visual name="4009_visual">
+            <origin xyz="-0.5999999999999954 9.682921131570765e-14 -1.200000000000001" rpy="3.1415926535897905 1.2246467991473532e-16 -3.263111464323979e-31" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4009.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4009_collision">
+            <origin xyz="-0.5999999999999954 9.682921131570765e-14 -1.200000000000001" rpy="3.1415926535897905 1.2246467991473532e-16 -3.263111464323979e-31" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4009.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4010">
+        <inertial>
+            <origin xyz="0.19999999999989837 -0.5999999999999978 0.6000000000000023" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="1085.184000000001" iyy="602.8800000000001" izz="602.8799999999992" ixy="-1.030420233874855e-62" iyz="4.579750306051007e-62" ixz="-6.923528417246405e-12" />
+        </inertial>
+        <visual name="4010_visual">
+            <origin xyz="-1.0322409593754855e-13 -1.1999999999999977 1.199999999999999" rpy="1.5707963267948966 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4010.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4010_collision">
+            <origin xyz="-1.0322409593754855e-13 -1.1999999999999977 1.199999999999999" rpy="1.5707963267948966 1.570796326794894 0" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4010.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4011">
+        <inertial>
+            <origin xyz="0.19999999999989837 0.6000000000000069 0.6000000000000019" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="1085.1840000000084" iyy="602.8799999999983" izz="602.8800000000192" ixy="-1.0304202338748618e-62" iyz="4.5797503060509935e-62" ixz="-6.866684998385863e-12" />
+        </inertial>
+        <visual name="4011_visual">
+            <origin xyz="-1.0322409593754855e-13 1.2000000000000068 1.1999999999999984" rpy="1.5987209013503416e-14 -3.552713678800501e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4011.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4011_collision">
+            <origin xyz="-1.0322409593754855e-13 1.2000000000000068 1.1999999999999984" rpy="1.5987209013503416e-14 -3.552713678800501e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4011.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="2007">
+        <inertial>
+            <origin xyz="0.09999999999992715 -0.5999999999999983 -0.6000000000000003" rpy="0.0 -0.0 0.0" />
+            <mass value="2260.7999999999997" />
+            <inertia ixx="542.5919999999969" iyy="278.8319999999994" izz="278.83200000000033" ixy="-1.1368683772162815e-13" iyz="9.094947017729282e-13" ixz="-3.0895108693584957e-12" />
+        </inertial>
+        <visual name="2007_visual">
+            <origin xyz="-7.124967282834405e-14 -1.1999999999999986 -1.2000000000000022" rpy="3.141592653589777 1.2246467991473532e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2007.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="2007_collision">
+            <origin xyz="-7.124967282834405e-14 -1.1999999999999986 -1.2000000000000022" rpy="3.141592653589777 1.2246467991473532e-16 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2007.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="2008">
+        <inertial>
+            <origin xyz="0.09999999999992715 0.6000000000000069 -0.6000000000000005" rpy="0.0 -0.0 0.0" />
+            <mass value="2260.7999999999997" />
+            <inertia ixx="542.5920000000187" iyy="278.8319999999994" izz="278.8320000000167" ixy="2.2737367544320783e-13" iyz="1.8189894035458565e-12" ixz="-2.9189806127762897e-12" />
+        </inertial>
+        <visual name="2008_visual">
+            <origin xyz="-7.124967282834405e-14 6.252776074688882e-15 -1.2000000000000024" rpy="3.141592653589777 -1.9259299443872444e-34 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2008.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="2008_collision">
+            <origin xyz="-7.124967282834405e-14 6.252776074688882e-15 -1.2000000000000024" rpy="3.141592653589777 -1.9259299443872444e-34 1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/2008.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="4012">
+        <inertial>
+            <origin xyz="5.115907697472721e-15 -0.19999999999992712 -0.600000000000002" rpy="0.0 -0.0 0.0" />
+            <mass value="4521.6" />
+            <inertia ixx="602.8800000000028" iyy="1085.184000000023" izz="602.8800000000192" ixy="-4.547473508864641e-13" iyz="-1.1368683772161605e-12" ixz="3.637978807091713e-12" />
+        </inertial>
+        <visual name="4012_visual">
+            <origin xyz="-0.5999999999999954 7.124967282834405e-14 -1.2000000000000022" rpy="3.1415926535897905 1.2246467991473532e-16 -3.263111464323979e-31" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4012.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="4012_collision">
+            <origin xyz="-0.5999999999999954 7.124967282834405e-14 -1.2000000000000022" rpy="3.1415926535897905 1.2246467991473532e-16 -3.263111464323979e-31" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/4012.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Acrylic_Fence2">
+        <inertial>
+            <origin xyz="-2.0000000000000004 -0.005000000000001705 -2.4868995751603507e-14" rpy="0.0 -0.0 0.0" />
+            <mass value="219.79999999999998" />
+            <inertia ixx="8.97699833333445" iyy="302.041833333333" izz="293.068498333334" ixy="-2.2737367544323206e-13" iyz="-3.539356585475298e-30" ixz="2.842170943040401e-14" />
+        </inertial>
+        <visual name="Acrylic_Fence2_visual">
+            <origin xyz="6.661338147750939e-17 0.0 0.349999999999975" rpy="-1.5707963267948968 -2.664532718001526e-15 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Acrylic_Fence2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Acrylic_Fence2_collision">
+            <origin xyz="6.661338147750939e-17 0.0 0.349999999999975" rpy="-1.5707963267948968 -2.664532718001526e-15 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="package://arena_viz/models/DDRena/meshes/Acrylic_Fence2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="base_link_Rigid-1" type="fixed">
+        <origin xyz="-0.025000000000000046 0.5000000000000252 -9.450000000000001" rpy="-1.570796326794894 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="Acrylic_Fence" />
+    </joint>
+    <joint name="base_link_Rigid-2" type="fixed">
+        <origin xyz="-0.025000000000000046 0.050000000000001724 -0.9500000000000001" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="spearhead_rack" />
+    </joint>
+    <joint name="base_link_Rigid-3" type="fixed">
+        <origin xyz="3.0000000000000053 0.049999999999999184 0.0" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="Staff_Rack" />
+    </joint>
+    <joint name="base_link_Rigid-4" type="fixed">
+        <origin xyz="-0.025000000000000046 0.45000000000002865 -10.75" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="Tic-Tac-Toe_Base" />
+    </joint>
+    <joint name="Tic-Tac-Toe_Base_Rigid-5" type="fixed">
+        <origin xyz="0.0 -0.4 0.0" rpy="-3.944304526105059e-31 -2.430636181953612e-76 -6.162394829979896e-46" />
+        <parent link="Tic-Tac-Toe_Base" />
+        <child link="Tic-Tac-Toe_Top" />
+    </joint>
+    <joint name="base_link_Rigid-32" type="fixed">
+        <origin xyz="4.800000000000009 0.05000000000000771 -3.2000000000000006" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="4001" />
+    </joint>
+    <joint name="base_link_Rigid-33" type="fixed">
+        <origin xyz="3.0000000000000053 0.05000000000000771 -3.2000000000000006" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="2001" />
+    </joint>
+    <joint name="base_link_Rigid-34" type="fixed">
+        <origin xyz="1.2000000000000022 0.05000000000000771 -3.2000000000000006" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="4002" />
+    </joint>
+    <joint name="base_link_Rigid-35" type="fixed">
+        <origin xyz="4.800000000000009 0.0500000000000141 -5.600000000000001" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="2002" />
+    </joint>
+    <joint name="base_link_Rigid-36" type="fixed">
+        <origin xyz="3.0000000000000053 0.0500000000000141 -5.600000000000001" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="4003" />
+    </joint>
+    <joint name="base_link_Rigid-37" type="fixed">
+        <origin xyz="1.2000000000000022 0.0500000000000141 -5.600000000000001" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="6001" />
+    </joint>
+    <joint name="base_link_Rigid-38" type="fixed">
+        <origin xyz="4.800000000000009 0.0500000000000141 -5.600000000000001" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="4004" />
+    </joint>
+    <joint name="base_link_Rigid-39" type="fixed">
+        <origin xyz="3.0000000000000053 0.0500000000000141 -5.600000000000001" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="6002" />
+    </joint>
+    <joint name="base_link_Rigid-40" type="fixed">
+        <origin xyz="1.2000000000000022 0.0500000000000141 -5.600000000000001" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="4005" />
+    </joint>
+    <joint name="base_link_Rigid-41" type="fixed">
+        <origin xyz="4.800000000000009 0.0500000000000205 -8.000000000000002" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="2003" />
+    </joint>
+    <joint name="base_link_Rigid-42" type="fixed">
+        <origin xyz="3.0000000000000053 0.0500000000000205 -8.000000000000002" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="4006" />
+    </joint>
+    <joint name="base_link_Rigid-43" type="fixed">
+        <origin xyz="1.2000000000000022 0.0500000000000205 -8.000000000000002" rpy="3.141592653589793 -2.664532718001533e-15 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="2004" />
+    </joint>
+    <joint name="base_link_Rigid-51" type="fixed">
+        <origin xyz="-3.0500000000000056 0.0500000000000141 -5.600000000000001" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="6004" />
+    </joint>
+    <joint name="base_link_Rigid-56" type="fixed">
+        <origin xyz="-3.0500000000000056 0.049999999999999184 0.0" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="Staff_Rack2" />
+    </joint>
+    <joint name="base_link_Rigid-57" type="fixed">
+        <origin xyz="-1.2500000000000022 0.05000000000000771 -3.2000000000000006" rpy="3.141592653589793 -1.5987209013503387e-14 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="4007" />
+    </joint>
+    <joint name="base_link_Rigid-58" type="fixed">
+        <origin xyz="-4.8500000000000085 0.05000000000000771 -3.2000000000000006" rpy="3.141592653589793 -1.5987209013503387e-14 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="4008" />
+    </joint>
+    <joint name="base_link_Rigid-59" type="fixed">
+        <origin xyz="-3.0500000000000056 0.05000000000000771 -3.2000000000000006" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="2005" />
+    </joint>
+    <joint name="base_link_Rigid-60" type="fixed">
+        <origin xyz="-1.2500000000000022 0.0500000000000141 -5.600000000000001" rpy="3.141592653589793 -1.5987209013503387e-14 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="6003" />
+    </joint>
+    <joint name="base_link_Rigid-61" type="fixed">
+        <origin xyz="-4.8500000000000085 0.0500000000000141 -5.600000000000001" rpy="3.141592653589793 -1.5987209013503387e-14 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="2006" />
+    </joint>
+    <joint name="base_link_Rigid-63" type="fixed">
+        <origin xyz="-3.0500000000000056 0.0500000000000141 -5.600000000000001" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="4009" />
+    </joint>
+    <joint name="base_link_Rigid-64" type="fixed">
+        <origin xyz="-1.2500000000000022 0.0500000000000141 -5.600000000000001" rpy="3.141592653589793 -1.5987209013503387e-14 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="4010" />
+    </joint>
+    <joint name="base_link_Rigid-65" type="fixed">
+        <origin xyz="-4.8500000000000085 0.0500000000000141 -5.600000000000001" rpy="3.141592653589793 -1.5987209013503387e-14 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="4011" />
+    </joint>
+    <joint name="base_link_Rigid-66" type="fixed">
+        <origin xyz="-1.2500000000000022 0.0500000000000205 -8.000000000000002" rpy="3.141592653589793 -1.5987209013503387e-14 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="2007" />
+    </joint>
+    <joint name="base_link_Rigid-67" type="fixed">
+        <origin xyz="-4.8500000000000085 0.0500000000000205 -8.000000000000002" rpy="3.141592653589793 -1.5987209013503387e-14 1.5707963267948966" />
+        <parent link="base_link" />
+        <child link="2008" />
+    </joint>
+    <joint name="base_link_Rigid-68" type="fixed">
+        <origin xyz="-3.0500000000000056 0.0500000000000205 -8.000000000000002" rpy="-3.1415926535897905 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="4012" />
+    </joint>
+    <joint name="base_link_Rigid-69" type="fixed">
+        <origin xyz="-0.025000000000000046 0.5000000000000252 -9.450000000000001" rpy="-1.570796326794894 -8.55284707229504e-50 8.552847072295263e-50" />
+        <parent link="base_link" />
+        <child link="Acrylic_Fence2" />
+    </joint>
+</robot>
